@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Missionary Ventures Australia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header id="navbar" class="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="nav-logo">
+            <span class="logo-highlight">missionary</span> ventures australia
+            <span class="logo-tagline">Involve &middot; Inspire &middot; Impact</span>
+        </a>
+        <nav class="nav-menu" id="navMenu">
+            <a href="index.html" class="nav-link">Home</a>
+            <div class="nav-dropdown">
+                <a href="about.html" class="nav-link">About <i class="fas fa-chevron-down nav-arrow"></i></a>
+                <div class="dropdown-menu">
+                    <a href="about.html" class="dropdown-link">About Us</a>
+                    <a href="mission.html" class="dropdown-link">Our Mission</a>
+                    <a href="team.html" class="dropdown-link">Our Team</a>
+                </div>
+            </div>
+            <div class="nav-dropdown">
+                <a href="countries.html" class="nav-link">Get Involved <i class="fas fa-chevron-down nav-arrow"></i></a>
+                <div class="dropdown-menu">
+                    <a href="countries.html" class="dropdown-link">Where We Work</a>
+                    <a href="trips.html" class="dropdown-link">Team Trips</a>
+                    <a href="donate.html" class="dropdown-link">Donate</a>
+                </div>
+            </div>
+            <a href="news.html" class="nav-link">News</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+            <a href="donate.html" class="nav-link nav-cta">Donate</a>
+        </nav>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+
+<section class="page-hero">
+    <div class="page-hero-bg">
+        <img src="https://mvaustralia.org/wp-content/uploads/2024/11/photo2jpg.jpg" alt="">
+        <div class="page-hero-overlay"></div>
+    </div>
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="index.html">Home</a> <span>/</span> <span>Contact</span>
+        </div>
+        <span class="section-label">We're Here to Help</span>
+        <h1>Contact Us</h1>
+        <p>Reach out to us with any questions or inquiries</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="contact-grid">
+            <div class="contact-info">
+                <span class="section-label">Get in Touch</span>
+                <h2 class="section-title">Contact Us</h2>
+                <p class="section-desc">For more information on MVA and how you can get involved, please reach out to us. We would love to hear from you.</p>
+
+                <div class="contact-details">
+                    <div class="contact-item" data-animate>
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Phone</h4>
+                            <p>0492 983 607</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item" data-animate>
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Email</h4>
+                            <p>office@mvaustralia.org</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item" data-animate>
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Address</h4>
+                            <p>PO Box 396, Ocean Grove<br>Victoria 3226, Australia</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item" data-animate>
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Office Hours</h4>
+                            <p>Tuesday - Friday, 9:00am - 4:00pm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-container">
+                <div class="contact-form glass-card" data-animate>
+                    <h3>Send us a Message</h3>
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="general">General Enquiry</option>
+                                <option value="trips">Team Trips</option>
+                                <option value="donations">Donations</option>
+                                <option value="volunteering">Volunteering</option>
+                                <option value="partnership">Partnership</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-wave">
+        <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+            <path d="M0,40 C150,80 350,0 500,40 C650,80 800,20 1000,50 C1200,80 1350,30 1440,50 L1440,100 L0,100 Z" fill="currentColor"/>
+        </svg>
+    </div>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-about">
+                <div class="footer-logo"><span class="logo-highlight">missionary</span> ventures australia</div>
+                <p>A family of Christians bound together by our love for God and for others, reaching the world with the love of Jesus Christ.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="about.html">About Us</a>
+                <a href="mission.html">Our Mission</a>
+                <a href="countries.html">Where We Work</a>
+                <a href="trips.html">Team Trips</a>
+                <a href="team.html">Our Team</a>
+                <a href="donate.html">Donate</a>
+            </div>
+            <div class="footer-links">
+                <h4>Get Involved</h4>
+                <a href="trips.html">Join a Mission Trip</a>
+                <a href="donate.html">Financial Partnership</a>
+                <a href="contact.html">Volunteer</a>
+                <a href="contact.html">Partner With Us</a>
+                <a href="news.html">Read Our Stories</a>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Info</h4>
+                <p><i class="fas fa-phone"></i> 0492 983 607</p>
+                <p><i class="fas fa-envelope"></i> office@mvaustralia.org</p>
+                <p><i class="fas fa-map-marker-alt"></i> PO Box 396, Ocean Grove<br>Victoria 3226, Australia</p>
+                <div class="footer-charity"><p>ACNC Registered Charity</p></div>
+            </div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2025 Missionary Ventures Australia. All rights reserved.</p></div>
+    </div>
+</footer>
+<a href="#" class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></a>
+<script src="script.js"></script>
+</body>
+</html>
