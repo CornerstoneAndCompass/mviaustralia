@@ -1,210 +1,344 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Our team · Missionary Ventures Australia</title>
-    <meta name="description" content="Leadership, board, ASEAN directors, and country directors of Missionary Ventures Australia.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team - Missionary Ventures Australia</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,500;0,600;0,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400;1,8..60,600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="theme/theme.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<a class="skip-link" href="#main">Skip to content</a>
-<header class="site-header" id="navbar">
-    <div class="letterbar" aria-hidden="true"></div>
-    <div class="utility">
-        <div class="container utility-inner">
-            <p>PO Box 396, Ocean Grove, Victoria</p>
-            <p class="utility-links">
-                <a href="tel:0492983607">0492 983 607</a>
-                <a href="mailto:office@mvaustralia.org">office@mvaustralia.org</a>
-                <span class="utility-hours">Tuesday to Friday, 9am to 4pm</span>
-            </p>
-        </div>
-    </div>
-    <div class="nav-bar">
-        <div class="container nav-inner">
-            <a class="brand" href="index.html">
-                <img src="img/wordmark.png" alt="Missionary Ventures" width="1920" height="290">
-                <span class="brand-meta">
-                    <span class="brand-place">Australia</span>
-                    <span class="brand-tag">Involve, inspire, impact</span>
-                </span>
-            </a>
-            <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navMenu">
-                <span class="bars" aria-hidden="true"></span>
-                <span class="visually-hidden">Menu</span>
-            </button>
-            <nav class="nav-menu" id="navMenu" aria-label="Primary">
-                <a class="nav-link" href="index.html">Home</a>
-                <div class="nav-dropdown">
-                    <button class="nav-link nav-subtoggle is-current" type="button" aria-expanded="false" aria-haspopup="true">About</button>
-                    <div class="dropdown-menu">
-                        <a href="about.html">About us</a>
-                        <a href="mission.html">Our mission</a>
-                        <a href="team.html" aria-current="page">Our team</a>
-                    </div>
+<header id="navbar" class="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="nav-logo">
+            <span class="logo-highlight">missionary</span> ventures australia
+            <span class="logo-tagline">Involve &middot; Inspire &middot; Impact</span>
+        </a>
+        <nav class="nav-menu" id="navMenu">
+            <a href="index.html" class="nav-link">Home</a>
+            <div class="nav-dropdown">
+                <a href="about.html" class="nav-link active">About <i class="fas fa-chevron-down nav-arrow"></i></a>
+                <div class="dropdown-menu">
+                    <a href="about.html" class="dropdown-link">About Us</a>
+                    <a href="mission.html" class="dropdown-link">Our Mission</a>
+                    <a href="team.html" class="dropdown-link active">Our Team</a>
                 </div>
-                <div class="nav-dropdown">
-                    <button class="nav-link nav-subtoggle" type="button" aria-expanded="false" aria-haspopup="true">Get involved</button>
-                    <div class="dropdown-menu">
-                        <a href="countries.html">Where we work</a>
-                        <a href="trips.html">Team trips</a>
-                        <a href="donate.html">Donate</a>
-                    </div>
+            </div>
+            <div class="nav-dropdown">
+                <a href="countries.html" class="nav-link">Get Involved <i class="fas fa-chevron-down nav-arrow"></i></a>
+                <div class="dropdown-menu">
+                    <a href="countries.html" class="dropdown-link">Where We Work</a>
+                    <a href="trips.html" class="dropdown-link">Team Trips</a>
+                    <a href="donate.html" class="dropdown-link">Donate</a>
                 </div>
-                <a class="nav-link" href="news.html">News</a>
-                <a class="nav-link" href="contact.html">Contact</a>
-                <a class="nav-link nav-cta" href="donate.html">Donate</a>
-            </nav>
-        </div>
+            </div>
+            <a href="news.html" class="nav-link">News</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+            <a href="donate.html" class="nav-link nav-cta">Donate</a>
+        </nav>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
     </div>
 </header>
 
-<main id="main">
-
-<header class="page-mast">
-    <div class="container">
-        <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a> <span aria-hidden="true">/</span> <span>Our team</span></nav>
-        <h1>Our team</h1>
-        <p class="deck">The Australian office, the board, ASEAN directors, and country directors.</p>
+<section class="page-hero">
+    <div class="page-hero-bg">
+        <img src="img/team-trips.jpg" alt="Team group photo">
+        <div class="page-hero-overlay"></div>
     </div>
-</header>
-
-<section class="band band-white">
     <div class="container">
-        <h2 class="display">Leadership</h2>
-        <div class="people-leads">
-            <article>
-                <p class="role">General manager</p>
-                <h3>Lynda Serpell</h3>
-                <p>Leads MVA and takes teams to share the Gospel in Asia Pacific.</p>
-            </article>
-            <article>
-                <p class="role">Website manager</p>
-                <h3>April Riggins</h3>
-                <p>Looks after the website, and cares about equipping national Christian leaders where the church is still small.</p>
-            </article>
+        <div class="breadcrumb">
+            <a href="index.html">Home</a> <span>/</span> <span>Our Team</span>
         </div>
-    </div>
-</section>
-<section class="band">
-    <div class="container">
-        <h2 class="display">Board</h2>
-        <p>Oversight for the Australian organisation.</p>
-        <ul class="plain-list" style="margin-top:1rem">
-            <li><strong>Phil Plowman</strong>, chairman</li>
-            <li><strong>Stefanos Irwanto</strong>, board member</li>
-            <li><strong>Lynda Serpell</strong>, board member</li>
-            <li><strong>John F. Williams</strong>, board member</li>
-        </ul>
-    </div>
-</section>
-<section class="band band-white">
-    <div class="container">
-        <h2 class="display">MV ASEAN directors</h2>
-        <ul class="plain-list" style="margin-top:1rem">
-            <li><strong>Phil Plowman</strong>, director, Melbourne, Australia</li>
-            <li><strong>Chan Weng Seng</strong>, deputy director, Kuala Lumpur, Malaysia</li>
-            <li><strong>Eng Kor Ooi and Chee Suan Bee</strong>, associate directors, Langkawi, Malaysia</li>
-        </ul>
-    </div>
-</section>
-<section class="band">
-    <div class="container">
-        <h2 class="display">Country directors</h2>
-        <p>Where a name is withheld, that is for the safety of the person.</p>
-        <div class="director-groups" style="margin-top:1.5rem">
-            <section><h3>Cambodia</h3><p class="who">Ps Plang Samreth <span>Country director</span></p></section>
-            <section><h3>Indonesia</h3><p class="who">Ps Ledianus Gulu <span>Country director</span></p></section>
-            <section><h3>Laos</h3><p class="who">Name withheld <span>Country director, for security</span></p></section>
-            <section><h3>Malaysia</h3><p class="who">Ps Gedion Lamangis <span>Country director</span></p><p class="who">Ps Jellin Wandak <span>Country director</span></p></section>
-            <section><h3>Myanmar</h3><p class="who">Name withheld <span>Country director, for security</span></p></section>
-            <section><h3>Thailand</h3><p class="who">Ps Supol Phaengtan <span>Country director</span></p><p class="who">Chee Suan Kee <span>Country director</span></p></section>
-            <section><h3>Timor Leste</h3><p class="who">Ps Artama Vakalalabure <span>Country director</span></p></section>
-        </div>
-    </div>
-</section>
-<section class="band band-tight closing band-sand">
-    <div class="container closing-inner">
-        <div>
-            <h2>Work with this team</h2>
-            <p>Join a trip, ask about a partnership, or support the work in prayer and in giving.</p>
-        </div>
-        <div class="closing-actions"><a class="btn btn-primary" href="trips.html">Team trips</a><a class="btn btn-text" href="contact.html">Contact</a></div>
+        <span class="section-label">TEAM</span>
+        <h1>Meet Our Leaders</h1>
+        <p>Dedicated team members committed to equipping leaders across the Asia/Pacific region</p>
     </div>
 </section>
 
-
-</main>
-<footer class="site-footer">
-    <div class="container footer-grid">
-        <div>
-            <p class="footer-name">Missionary Ventures Australia</p>
-            <p>A family of Christians bound together by our love for God and for others, reaching the world with the love of Jesus Christ.</p>
-            <p class="footer-tag">Involve, inspire, impact</p>
+<section class="section" data-animate="fade-up">
+    <div class="container">
+        <div style="text-align: center; margin-bottom: 3rem;">
+            <span class="section-label">LEADERSHIP</span>
+            <h2 class="section-title">Our Leadership Team</h2>
+            <p class="section-desc">Lynda Serpell leads the office. April Riggins looks after the website.</p>
         </div>
-        <nav class="footer-col" aria-label="On this site">
-            <h2>On this site</h2>
-            <a href="about.html">About us</a>
-            <a href="mission.html">Our mission</a>
-            <a href="countries.html">Where we work</a>
-            <a href="trips.html">Team trips</a>
-            <a href="team.html">Our team</a>
-            <a href="news.html">News</a>
-        </nav>
-        <nav class="footer-col" aria-label="Get involved">
-            <h2>Get involved</h2>
-            <a href="trips.html">Join a mission trip</a>
-            <a href="donate.html">Give</a>
-            <a href="contact.html">Volunteer</a>
-            <a href="contact.html">Partner with us</a>
-            <a href="news.html">Read the stories</a>
-        </nav>
-        <div class="footer-col">
-            <h2>Office</h2>
-            <a href="tel:0492983607">0492 983 607</a>
-            <a href="mailto:office@mvaustralia.org">office@mvaustralia.org</a>
-            <p>PO Box 396<br>Ocean Grove<br>Victoria 3226, Australia</p>
-            <p>ACNC registered charity. Gifts over $2 are tax deductible.</p>
+        <div class="team-grid" style="max-width: 800px; margin: 0 auto;">
+            <div class="team-card">
+                <div class="team-avatar">
+                    <i class="fas fa-user"></i>
+                </div>
+                <h4>Lynda Serpell</h4>
+                <span class="team-role">MVA General Manager</span>
+                <p class="team-desc">Leads MVA, and takes teams to share the Gospel in Asia Pacific.</p>
+            </div>
+            <div class="team-card">
+                <div class="team-avatar">
+                    <i class="fas fa-user"></i>
+                </div>
+                <h4>April Riggins</h4>
+                <span class="team-role">Website Manager</span>
+                <p class="team-desc">Looks after the website, and cares about equipping national Christian leaders where the church is still small.</p>
+            </div>
         </div>
     </div>
-    <div class="container footer-bottom">
-        <p>&copy; 2026 Missionary Ventures Australia.</p>
-        <p><a href="https://mvi.org" target="_blank" rel="noopener">Missionary Ventures International</a></p>
+</section>
+
+<section class="section" style="background-color: #eaecf2;" data-animate="fade-up">
+    <div class="container">
+        <div style="text-align: center; margin-bottom: 3rem;">
+            <span class="section-label">GOVERNANCE</span>
+            <h2 class="section-title">Board Members</h2>
+            <p class="section-desc">Oversight and strategic direction from our board</p>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 2rem;">
+            <div class="team-card-sm">
+                <div class="team-avatar">
+                    <i class="fas fa-user"></i>
+                </div>
+                <h4>Phil Plowman</h4>
+                <span class="team-role">Chairman</span>
+            </div>
+            <div class="team-card-sm">
+                <div class="team-avatar">
+                    <i class="fas fa-user"></i>
+                </div>
+                <h4>Stefanos Irwanto</h4>
+                <span class="team-role">Board Member</span>
+            </div>
+            <div class="team-card-sm">
+                <div class="team-avatar">
+                    <i class="fas fa-user"></i>
+                </div>
+                <h4>Lynda Serpell</h4>
+                <span class="team-role">Board Member</span>
+            </div>
+            <div class="team-card-sm">
+                <div class="team-avatar">
+                    <i class="fas fa-user"></i>
+                </div>
+                <h4>John F. Williams</h4>
+                <span class="team-role">Board Member</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" data-animate="fade-up">
+    <div class="container">
+        <div style="text-align: center; margin-bottom: 3rem;">
+            <span class="section-label">REGIONAL DIRECTORS</span>
+            <h2 class="section-title">MV ASEAN Directors</h2>
+            <p class="section-desc">Leadership across the Asia-Pacific region</p>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+            <div class="team-card">
+                <div class="team-avatar">
+                    <i class="fas fa-user"></i>
+                </div>
+                <h4>Phil Plowman</h4>
+                <span class="team-role">Director</span>
+                <p class="team-desc">Melbourne, Australia</p>
+            </div>
+            <div class="team-card">
+                <div class="team-avatar">
+                    <i class="fas fa-user"></i>
+                </div>
+                <h4>Chan Weng Seng</h4>
+                <span class="team-role">Deputy Director</span>
+                <p class="team-desc">Kuala Lumpur, Malaysia</p>
+            </div>
+            <div class="team-card">
+                <div class="team-avatar">
+                    <i class="fas fa-user"></i>
+                </div>
+                <h4>Eng Kor Ooi & Chee Suan Bee</h4>
+                <span class="team-role">Associate Directors</span>
+                <p class="team-desc">Langkawi, Malaysia</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" style="background-color: #eaecf2;" data-animate="fade-up">
+    <div class="container">
+        <div style="text-align: center; margin-bottom: 3rem;">
+            <span class="section-label">COUNTRY LEADERS</span>
+            <h2 class="section-title">Country Directors</h2>
+            <p class="section-desc">National leaders directing our work in each country</p>
+        </div>
+
+        <div style="margin-bottom: 3rem;">
+            <h3 class="team-cat-title">Cambodia</h3>
+            <div class="team-category">
+                <div class="team-card-sm">
+                    <div class="team-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h4>Ps Plang Samreth</h4>
+                    <span class="team-role">Country Director</span>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-bottom: 3rem;">
+            <h3 class="team-cat-title">Indonesia</h3>
+            <div class="team-category">
+                <div class="team-card-sm">
+                    <div class="team-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h4>Ps Ledianus Gulu</h4>
+                    <span class="team-role">Country Director</span>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-bottom: 3rem;">
+            <h3 class="team-cat-title">Laos</h3>
+            <div class="team-category">
+                <div class="team-card-sm">
+                    <div class="team-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h4>Name Withheld</h4>
+                    <span class="team-role">Country Director (Security)</span>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-bottom: 3rem;">
+            <h3 class="team-cat-title">Malaysia</h3>
+            <div class="team-category" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem;">
+                <div class="team-card-sm">
+                    <div class="team-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h4>Ps Gedion Lamangis</h4>
+                    <span class="team-role">Country Director</span>
+                </div>
+                <div class="team-card-sm">
+                    <div class="team-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h4>Ps Jellin Wandak</h4>
+                    <span class="team-role">Country Director</span>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-bottom: 3rem;">
+            <h3 class="team-cat-title">Myanmar</h3>
+            <div class="team-category">
+                <div class="team-card-sm">
+                    <div class="team-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h4>Name Withheld</h4>
+                    <span class="team-role">Country Director (Security)</span>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-bottom: 3rem;">
+            <h3 class="team-cat-title">Thailand</h3>
+            <div class="team-category" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem;">
+                <div class="team-card-sm">
+                    <div class="team-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h4>Ps Supol Phaengtan</h4>
+                    <span class="team-role">Country Director</span>
+                </div>
+                <div class="team-card-sm">
+                    <div class="team-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h4>Chee Suan Kee</h4>
+                    <span class="team-role">Country Director</span>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-bottom: 3rem;">
+            <h3 class="team-cat-title">Timor Leste</h3>
+            <div class="team-category">
+                <div class="team-card-sm">
+                    <div class="team-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h4>Ps Artama Vakalalabure</h4>
+                    <span class="team-role">Country Director</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="cta-section" data-animate="fade-up">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Work With Our Team</h2>
+            <p>Join us on a mission trip, partner with us in ministry, or support our work through prayer and financial giving.</p>
+            <div class="cta-buttons">
+                <a href="trips.html" class="btn btn-primary">Explore Mission Trips</a>
+                <a href="contact.html" class="btn btn-primary" style="background-color: transparent; border: 2px solid white;">Contact Us</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-wave">
+        <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+            <path d="M0,40 C150,80 350,0 500,40 C650,80 800,20 1000,50 C1200,80 1350,30 1440,50 L1440,100 L0,100 Z" fill="currentColor"/>
+        </svg>
+    </div>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-about">
+                <div class="footer-logo"><span class="logo-highlight">missionary</span> ventures australia</div>
+                <p>A family of Christians bound together by our love for God and for others, reaching the world with the love of Jesus Christ.</p>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/missionaryventures.australia" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/missionaryventures/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/channel/UCHKHgtBLxyuWaBORw_h2sQQ" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="about.html">About Us</a>
+                <a href="mission.html">Our Mission</a>
+                <a href="countries.html">Where We Work</a>
+                <a href="trips.html">Team Trips</a>
+                <a href="team.html">Our Team</a>
+                <a href="donate.html">Donate</a>
+            </div>
+            <div class="footer-links">
+                <h4>Get Involved</h4>
+                <a href="trips.html">Join a Mission Trip</a>
+                <a href="donate.html">Financial Partnership</a>
+                <a href="contact.html">Volunteer</a>
+                <a href="contact.html">Partner With Us</a>
+                <a href="news.html">Read Our Stories</a>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Info</h4>
+                <p><i class="fas fa-phone"></i> 0492 983 607</p>
+                <p><i class="fas fa-envelope"></i> office@mvaustralia.org</p>
+                <p><i class="fas fa-map-marker-alt"></i> PO Box 396, Ocean Grove<br>Victoria 3226, Australia</p>
+                <div class="footer-charity"><p>ACNC Registered Charity</p></div>
+            </div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2025 Missionary Ventures Australia. All rights reserved.</p></div>
     </div>
 </footer>
-
-<button class="to-top" id="toTop" type="button" hidden>Top</button>
-<div class="questions" id="questions">
-    <button class="questions-toggle" id="questionsToggle" type="button" aria-expanded="false" aria-controls="questionsPanel">Questions</button>
-    <div class="questions-panel" id="questionsPanel" hidden>
-        <div class="questions-head">
-            <h2>Written answers</h2>
-            <button class="questions-close" id="questionsClose" type="button">Close</button>
-        </div>
-        <div class="questions-log" id="questionsLog" aria-live="polite">
-            <p class="questions-welcome">These are short written answers about Missionary Ventures Australia. For anything else, call <a href="tel:0492983607">0492 983 607</a> or email <a href="mailto:office@mvaustralia.org">office@mvaustralia.org</a>.</p>
-        </div>
-        <div class="questions-suggestions" id="questionsSuggestions">
-            <button type="button" data-ask="Tell me about MVA">About MVA</button>
-            <button type="button" data-ask="How can I join a mission trip?">Team trips</button>
-            <button type="button" data-ask="How can I donate?">Giving</button>
-            <button type="button" data-ask="Where does MVA work?">Countries</button>
-            <button type="button" data-ask="How do I contact the office?">Office</button>
-            <button type="button" data-ask="Tell me about Thailand flood relief">Thailand appeal</button>
-        </div>
-        <form class="questions-form" id="questionsForm">
-            <label class="visually-hidden" for="questionsInput">Your question</label>
-            <input id="questionsInput" type="text" placeholder="Trips, giving, or the office">
-            <button type="submit">Ask</button>
-        </form>
-    </div>
-</div>
-
-<script src="js/au-site.js" defer></script>
-<script src="js/theme.js" defer></script>
+<a href="#navbar" class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></a>
+<script src="script.js"></script>
 </body>
 </html>

@@ -1,170 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Where we work · Missionary Ventures Australia</title>
-    <meta name="description" content="Missionary Ventures Australia works in Cambodia, Fiji, Indonesia, Laos, Malaysia, Myanmar, Thailand, Timor Leste, and Vanuatu.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Where We Work - Missionary Ventures Australia</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,500;0,600;0,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400;1,8..60,600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="theme/theme.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<a class="skip-link" href="#main">Skip to content</a>
-<header class="site-header" id="navbar">
-    <div class="letterbar" aria-hidden="true"></div>
-    <div class="utility">
-        <div class="container utility-inner">
-            <p>PO Box 396, Ocean Grove, Victoria</p>
-            <p class="utility-links">
-                <a href="tel:0492983607">0492 983 607</a>
-                <a href="mailto:office@mvaustralia.org">office@mvaustralia.org</a>
-                <span class="utility-hours">Tuesday to Friday, 9am to 4pm</span>
-            </p>
-        </div>
-    </div>
-    <div class="nav-bar">
-        <div class="container nav-inner">
-            <a class="brand" href="index.html">
-                <img src="img/wordmark.png" alt="Missionary Ventures" width="1920" height="290">
-                <span class="brand-meta">
-                    <span class="brand-place">Australia</span>
-                    <span class="brand-tag">Involve, inspire, impact</span>
-                </span>
-            </a>
-            <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navMenu">
-                <span class="bars" aria-hidden="true"></span>
-                <span class="visually-hidden">Menu</span>
-            </button>
-            <nav class="nav-menu" id="navMenu" aria-label="Primary">
-                <a class="nav-link" href="index.html">Home</a>
-                <div class="nav-dropdown">
-                    <button class="nav-link nav-subtoggle" type="button" aria-expanded="false" aria-haspopup="true">About</button>
-                    <div class="dropdown-menu">
-                        <a href="about.html">About us</a>
-                        <a href="mission.html">Our mission</a>
-                        <a href="team.html">Our team</a>
-                    </div>
+<header id="navbar" class="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="nav-logo">
+            <span class="logo-highlight">missionary</span> ventures australia
+            <span class="logo-tagline">Involve &middot; Inspire &middot; Impact</span>
+        </a>
+        <nav class="nav-menu" id="navMenu">
+            <a href="index.html" class="nav-link">Home</a>
+            <div class="nav-dropdown">
+                <a href="about.html" class="nav-link">About <i class="fas fa-chevron-down nav-arrow"></i></a>
+                <div class="dropdown-menu">
+                    <a href="about.html" class="dropdown-link">About Us</a>
+                    <a href="mission.html" class="dropdown-link">Our Mission</a>
+                    <a href="team.html" class="dropdown-link">Our Team</a>
                 </div>
-                <div class="nav-dropdown">
-                    <button class="nav-link nav-subtoggle is-current" type="button" aria-expanded="false" aria-haspopup="true">Get involved</button>
-                    <div class="dropdown-menu">
-                        <a href="countries.html" aria-current="page">Where we work</a>
-                        <a href="trips.html">Team trips</a>
-                        <a href="donate.html">Donate</a>
-                    </div>
+            </div>
+            <div class="nav-dropdown">
+                <a href="countries.html" class="nav-link">Get Involved <i class="fas fa-chevron-down nav-arrow"></i></a>
+                <div class="dropdown-menu">
+                    <a href="countries.html" class="dropdown-link">Where We Work</a>
+                    <a href="trips.html" class="dropdown-link">Team Trips</a>
+                    <a href="donate.html" class="dropdown-link">Donate</a>
                 </div>
-                <a class="nav-link" href="news.html">News</a>
-                <a class="nav-link" href="contact.html">Contact</a>
-                <a class="nav-link nav-cta" href="donate.html">Donate</a>
-            </nav>
-        </div>
+            </div>
+            <a href="news.html" class="nav-link">News</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+            <a href="donate.html" class="nav-link nav-cta">Donate</a>
+        </nav>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
     </div>
 </header>
 
-<main id="main">
-
-<header class="page-mast">
+<section class="page-hero">
+    <div class="page-hero-bg">
+        <img src="img/community.jpg" alt="Where We Work">
+        <div class="page-hero-overlay"></div>
+    </div>
     <div class="container">
-        <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a> <span aria-hidden="true">/</span> <span>Where we work</span></nav>
-        <h1>Where we work</h1>
-        <p class="deck">Nine countries across the Asia Pacific, each with its own partners.</p>
+        <div class="breadcrumb">
+            <a href="index.html">Home</a> <span>/</span> <span>Where We Work</span>
+        </div>
+        <span class="section-label">Our Partnerships</span>
+        <h1>Where We Work</h1>
+        <p>Serving 9 countries across the Asia Pacific region</p>
     </div>
-</header>
+</section>
 
-<section class="band band-white">
+<section class="section" style="background: var(--white);">
     <div class="container">
-        <p class="measure">Missionary Ventures Australia works with national leaders who have strong relationships with churches and Christian organisations.</p>
-    </div>
-    <div class="container" style="margin-top:2rem">
-        <article class="place" id="cambodia"><img src="img/cambodia.jpg" alt="Field photograph linked with the Cambodia partnership."><div><h2>Cambodia</h2><p>Ps Plang Samreth</p></div></article><article class="place" id="fiji"><img src="img/fiji.jpg" alt="Field photograph linked with the Fiji partnership."><div><h2>Fiji</h2><p>National partners</p></div></article><article class="place" id="indonesia"><img src="img/indonesia.jpg" alt="Field photograph linked with the Indonesia partnership."><div><h2>Indonesia</h2><p>Ps Ledianus Gulu</p></div></article><article class="place" id="laos"><img src="img/laos.jpg" alt="Field photograph linked with the Laos partnership."><div><h2>Laos</h2><p>National partners</p></div></article><article class="place" id="malaysia"><img src="img/malaysia.jpg" alt="Field photograph linked with the Malaysia partnership."><div><h2>Malaysia</h2><p>Ps Gedion Lamangis</p></div></article><article class="place" id="myanmar"><img src="img/myanmar.jpg" alt="Field photograph linked with the Myanmar partnership."><div><h2>Myanmar</h2><p>National partners</p></div></article><article class="place" id="thailand"><img src="img/thailand.jpg" alt="Field photograph linked with the Thailand partnership."><div><h2>Thailand</h2><p>Ps Supol Phaengtan</p></div></article><article class="place" id="timor"><img src="img/timor.jpg" alt="Field photograph linked with the Timor Leste partnership."><div><h2>Timor Leste</h2><p>Ps Artama Vakalalabure</p></div></article><article class="place" id="vanuatu"><img src="img/vanuatu.jpg" alt="Field photograph linked with the Vanuatu partnership."><div><h2>Vanuatu</h2><p>National partners</p></div></article>
-    </div>
-</section>
-<section class="band">
-    <div class="container measure-wide">
-        <h2>How the region is approached</h2>
-        <p>The work depends on national leaders. Country directors know the language, the culture, and what their communities are asking for. MVA supports them with resources and with a link to the wider church, and leaves the shape of the ministry with them.</p>
-    </div>
-</section>
-<section class="band band-tight closing band-sand">
-    <div class="container closing-inner">
-        <div>
-            <h2>Talk with the office</h2>
-            <p>Ask about a partnership or about a team trip in one of these countries.</p>
+        <div class="section-header center" data-animate="fade-up">
+            <span class="section-label">Our Partnerships</span>
+            <h2 class="section-title">9 Countries, One Mission</h2>
+            <p class="section-desc">Missionary Ventures Australia works across the Asia Pacific region with dynamic national leaders who have strong relationships with churches and Christian organisations.</p>
         </div>
-        <div class="closing-actions"><a class="btn btn-primary" href="trips.html">Team trips</a><a class="btn btn-text" href="contact.html">Contact</a></div>
     </div>
 </section>
 
-
-</main>
-<footer class="site-footer">
-    <div class="container footer-grid">
-        <div>
-            <p class="footer-name">Missionary Ventures Australia</p>
-            <p>A family of Christians bound together by our love for God and for others, reaching the world with the love of Jesus Christ.</p>
-            <p class="footer-tag">Involve, inspire, impact</p>
-        </div>
-        <nav class="footer-col" aria-label="On this site">
-            <h2>On this site</h2>
-            <a href="about.html">About us</a>
-            <a href="mission.html">Our mission</a>
-            <a href="countries.html">Where we work</a>
-            <a href="trips.html">Team trips</a>
-            <a href="team.html">Our team</a>
-            <a href="news.html">News</a>
-        </nav>
-        <nav class="footer-col" aria-label="Get involved">
-            <h2>Get involved</h2>
-            <a href="trips.html">Join a mission trip</a>
-            <a href="donate.html">Give</a>
-            <a href="contact.html">Volunteer</a>
-            <a href="contact.html">Partner with us</a>
-            <a href="news.html">Read the stories</a>
-        </nav>
-        <div class="footer-col">
-            <h2>Office</h2>
-            <a href="tel:0492983607">0492 983 607</a>
-            <a href="mailto:office@mvaustralia.org">office@mvaustralia.org</a>
-            <p>PO Box 396<br>Ocean Grove<br>Victoria 3226, Australia</p>
-            <p>ACNC registered charity. Gifts over $2 are tax deductible.</p>
+<section class="section" style="background: #eaecf2;">
+    <div class="container">
+        <div class="countries-grid">
+            <div class="country-card" data-animate="zoom-in" style="--delay: 0s;">
+                <div class="country-img" style="background-image: url('img/cambodia.jpg');"></div>
+                <div class="country-flag">🇰🇭</div>
+                <h3>Cambodia</h3>
+                <p>Ps Plang Samreth</p>
+            </div>
+            <div class="country-card" data-animate="zoom-in" style="--delay: 0.1s;">
+                <div class="country-img" style="background-image: url('img/fiji.jpg');"></div>
+                <div class="country-flag">🇫🇯</div>
+                <h3>Fiji</h3>
+                <p>National Partners</p>
+            </div>
+            <div class="country-card" data-animate="zoom-in" style="--delay: 0.2s;">
+                <div class="country-img" style="background-image: url('img/indonesia.jpg');"></div>
+                <div class="country-flag">🇮🇩</div>
+                <h3>Indonesia</h3>
+                <p>Ps Ledianus Gulu</p>
+            </div>
+            <div class="country-card" data-animate="zoom-in" style="--delay: 0.3s;">
+                <div class="country-img" style="background-image: url('img/laos.jpg');"></div>
+                <div class="country-flag">🇱🇦</div>
+                <h3>Laos</h3>
+                <p>National Partners</p>
+            </div>
+            <div class="country-card" data-animate="zoom-in" style="--delay: 0.4s;">
+                <div class="country-img" style="background-image: url('img/malaysia.jpg');"></div>
+                <div class="country-flag">🇲🇾</div>
+                <h3>Malaysia</h3>
+                <p>Ps Gedion Lamangis</p>
+            </div>
+            <div class="country-card" data-animate="zoom-in" style="--delay: 0.5s;">
+                <div class="country-img" style="background-image: url('img/myanmar.jpg');"></div>
+                <div class="country-flag">🇲🇲</div>
+                <h3>Myanmar</h3>
+                <p>National Partners</p>
+            </div>
+            <div class="country-card" data-animate="zoom-in" style="--delay: 0.6s;">
+                <div class="country-img" style="background-image: url('img/thailand.jpg');"></div>
+                <div class="country-flag">🇹🇭</div>
+                <h3>Thailand</h3>
+                <p>Ps Supol Phaengtan</p>
+            </div>
+            <div class="country-card" data-animate="zoom-in" style="--delay: 0.7s;">
+                <div class="country-img" style="background-image: url('img/timor.jpg');"></div>
+                <div class="country-flag">🇹🇱</div>
+                <h3>Timor Leste</h3>
+                <p>Ps Artama Vakalalabure</p>
+            </div>
+            <div class="country-card" data-animate="zoom-in" style="--delay: 0.8s;">
+                <div class="country-img" style="background-image: url('img/vanuatu.jpg');"></div>
+                <div class="country-flag">🇻🇺</div>
+                <h3>Vanuatu</h3>
+                <p>National Partners</p>
+            </div>
         </div>
     </div>
-    <div class="container footer-bottom">
-        <p>&copy; 2026 Missionary Ventures Australia.</p>
-        <p><a href="https://mvi.org" target="_blank" rel="noopener">Missionary Ventures International</a></p>
+</section>
+
+<section class="section" style="background: var(--white);">
+    <div class="container">
+        <div class="section-header center" data-animate="fade-up">
+            <h2 class="section-title">Our Regional Approach</h2>
+            <p class="section-desc">The work depends on national leaders. Country directors know the language, the culture, and what their communities are asking for. MVA supports them with resources and with a link to the wider church, and leaves the shape of the ministry with them.</p>
+        </div>
+    </div>
+</section>
+
+<section class="cta-section" data-animate="fade-up">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Ask about a partnership</h2>
+            <p>Learn more about partnership opportunities and mission trips across the Asia Pacific region.</p>
+            <div class="cta-buttons">
+                <a href="trips.html" class="btn btn-primary">Join a Trip</a>
+                <a href="contact.html" class="btn btn-primary" style="background-color: transparent; border: 2px solid white;">Get in Touch</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-wave">
+        <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+            <path d="M0,40 C150,80 350,0 500,40 C650,80 800,20 1000,50 C1200,80 1350,30 1440,50 L1440,100 L0,100 Z" fill="currentColor"/>
+        </svg>
+    </div>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-about">
+                <div class="footer-logo"><span class="logo-highlight">missionary</span> ventures australia</div>
+                <p>A family of Christians bound together by our love for God and for others, reaching the world with the love of Jesus Christ.</p>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/missionaryventures.australia" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/missionaryventures/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/channel/UCHKHgtBLxyuWaBORw_h2sQQ" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="about.html">About Us</a>
+                <a href="mission.html">Our Mission</a>
+                <a href="countries.html">Where We Work</a>
+                <a href="trips.html">Team Trips</a>
+                <a href="team.html">Our Team</a>
+                <a href="donate.html">Donate</a>
+            </div>
+            <div class="footer-links">
+                <h4>Get Involved</h4>
+                <a href="trips.html">Join a Mission Trip</a>
+                <a href="donate.html">Financial Partnership</a>
+                <a href="contact.html">Volunteer</a>
+                <a href="contact.html">Partner With Us</a>
+                <a href="news.html">Read Our Stories</a>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Info</h4>
+                <p><i class="fas fa-phone"></i> 0492 983 607</p>
+                <p><i class="fas fa-envelope"></i> office@mvaustralia.org</p>
+                <p><i class="fas fa-map-marker-alt"></i> PO Box 396, Ocean Grove<br>Victoria 3226, Australia</p>
+                <div class="footer-charity"><p>ACNC Registered Charity</p></div>
+            </div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2025 Missionary Ventures Australia. All rights reserved.</p></div>
     </div>
 </footer>
-
-<button class="to-top" id="toTop" type="button" hidden>Top</button>
-<div class="questions" id="questions">
-    <button class="questions-toggle" id="questionsToggle" type="button" aria-expanded="false" aria-controls="questionsPanel">Questions</button>
-    <div class="questions-panel" id="questionsPanel" hidden>
-        <div class="questions-head">
-            <h2>Written answers</h2>
-            <button class="questions-close" id="questionsClose" type="button">Close</button>
-        </div>
-        <div class="questions-log" id="questionsLog" aria-live="polite">
-            <p class="questions-welcome">These are short written answers about Missionary Ventures Australia. For anything else, call <a href="tel:0492983607">0492 983 607</a> or email <a href="mailto:office@mvaustralia.org">office@mvaustralia.org</a>.</p>
-        </div>
-        <div class="questions-suggestions" id="questionsSuggestions">
-            <button type="button" data-ask="Tell me about MVA">About MVA</button>
-            <button type="button" data-ask="How can I join a mission trip?">Team trips</button>
-            <button type="button" data-ask="How can I donate?">Giving</button>
-            <button type="button" data-ask="Where does MVA work?">Countries</button>
-            <button type="button" data-ask="How do I contact the office?">Office</button>
-            <button type="button" data-ask="Tell me about Thailand flood relief">Thailand appeal</button>
-        </div>
-        <form class="questions-form" id="questionsForm">
-            <label class="visually-hidden" for="questionsInput">Your question</label>
-            <input id="questionsInput" type="text" placeholder="Trips, giving, or the office">
-            <button type="submit">Ask</button>
-        </form>
-    </div>
-</div>
-
-<script src="js/au-site.js" defer></script>
-<script src="js/theme.js" defer></script>
+<a href="#navbar" class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></a>
+<script src="script.js"></script>
 </body>
 </html>

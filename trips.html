@@ -1,205 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Team trips · Missionary Ventures Australia</title>
-    <meta name="description" content="Join a Missionary Ventures Australia team trip of 10 to 14 days in the Asia-Pacific. Preparation, costs, and who can come.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Trips - Missionary Ventures Australia</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,500;0,600;0,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400;1,8..60,600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="theme/theme.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<a class="skip-link" href="#main">Skip to content</a>
-<header class="site-header" id="navbar">
-    <div class="letterbar" aria-hidden="true"></div>
-    <div class="utility">
-        <div class="container utility-inner">
-            <p>PO Box 396, Ocean Grove, Victoria</p>
-            <p class="utility-links">
-                <a href="tel:0492983607">0492 983 607</a>
-                <a href="mailto:office@mvaustralia.org">office@mvaustralia.org</a>
-                <span class="utility-hours">Tuesday to Friday, 9am to 4pm</span>
+<header id="navbar" class="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="nav-logo">
+            <span class="logo-highlight">missionary</span> ventures australia
+            <span class="logo-tagline">Involve &middot; Inspire &middot; Impact</span>
+        </a>
+        <nav class="nav-menu" id="navMenu">
+            <a href="index.html" class="nav-link">Home</a>
+            <div class="nav-dropdown">
+                <a href="about.html" class="nav-link">About <i class="fas fa-chevron-down nav-arrow"></i></a>
+                <div class="dropdown-menu">
+                    <a href="about.html" class="dropdown-link">About Us</a>
+                    <a href="mission.html" class="dropdown-link">Our Mission</a>
+                    <a href="team.html" class="dropdown-link">Our Team</a>
+                </div>
+            </div>
+            <div class="nav-dropdown">
+                <a href="countries.html" class="nav-link">Get Involved <i class="fas fa-chevron-down nav-arrow"></i></a>
+                <div class="dropdown-menu">
+                    <a href="countries.html" class="dropdown-link">Where We Work</a>
+                    <a href="trips.html" class="dropdown-link">Team Trips</a>
+                    <a href="donate.html" class="dropdown-link">Donate</a>
+                </div>
+            </div>
+            <a href="news.html" class="nav-link">News</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+            <a href="donate.html" class="nav-link nav-cta">Donate</a>
+        </nav>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+
+<section class="page-hero">
+    <div class="page-hero-bg">
+        <img src="img/team-trips.jpg" alt="Team Trips">
+        <div class="page-hero-overlay"></div>
+    </div>
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="index.html">Home</a> <span>/</span> <span>Team Trips</span>
+        </div>
+        <span class="section-label">Get Involved</span>
+        <h1>Team Trips</h1>
+        <p>Join a mission trip across the Asia Pacific region</p>
+    </div>
+</section>
+
+<section class="section" style="background-color: white;">
+    <div class="container">
+        <div class="trips-content">
+            <div class="trips-text">
+                <h2 class="section-title">Mission Trip Opportunities</h2>
+                <p style="font-size: 1.05rem; line-height: 1.8; color: #333; margin-bottom: 2rem;">
+                    MVA invites churches, schools, youth groups, and individuals to participate in mission trips across the Asia Pacific region, partnering with national leaders in the Philippines, East Malaysia, Indonesia, Cambodia, Thailand, Fiji, and Vanuatu.
+                </p>
+
+                <div class="trip-details">
+                    <div class="trip-detail">
+                        <h4><i class="fas fa-calendar"></i> Duration</h4>
+                        <p>10-14 days flexible up to 3 months</p>
+                    </div>
+                    <div class="trip-detail">
+                        <h4><i class="fas fa-users"></i> Team Size</h4>
+                        <p>5-12 people</p>
+                    </div>
+                    <div class="trip-detail">
+                        <h4><i class="fas fa-clock"></i> Planning Timeline</h4>
+                        <p>Begin at least 6 months before</p>
+                    </div>
+                    <div class="trip-detail">
+                        <h4><i class="fas fa-smile"></i> Who Can Join</h4>
+                        <p>Youth to older adults welcome</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="trips-images">
+                <div class="trips-img-grid" style="display:flex;flex-direction:column;gap:12px;">
+                    <img src="img/team-trips.jpg" alt="Mission team in action" style="width:100%;height:220px;object-fit:cover;border-radius:12px;">
+                    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+                        <img src="img/community.jpg" alt="Community outreach" style="width:100%;height:140px;object-fit:cover;border-radius:12px;">
+                        <img src="img/mission-3.jpg" alt="Team building" style="width:100%;height:140px;object-fit:cover;border-radius:12px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" style="background-color: #eaecf2;">
+    <div class="container">
+        <h2 class="section-title">Team Training</h2>
+        <p style="font-size: 1.05rem; line-height: 1.8; color: #333; text-align: center; max-width: 700px; margin: 0 auto 2rem;">
+            Before a team travels, the preparation covers:
+        </p>
+
+        <div class="training-tags">
+            <span class="tag">Managing Expectations</span>
+            <span class="tag">Spiritual Discernment</span>
+            <span class="tag">Personal Identity</span>
+            <span class="tag">Team Unity</span>
+            <span class="tag">Conflict Resolution</span>
+            <span class="tag">Spiritual Warfare</span>
+            <span class="tag">Cross-Cultural Preparation</span>
+        </div>
+    </div>
+</section>
+
+<section class="section" style="background-color: white;">
+    <div class="container">
+        <h2 class="section-title">What's Included</h2>
+        <div style="max-width: 800px; margin: 0 auto;">
+            <ul style="font-size: 1.05rem; line-height: 2; color: #333; list-style: none; padding: 0;">
+                <li><i class="fas fa-check" style="color: #2ecc71; margin-right: 0.75rem;"></i> Airfares</li>
+                <li><i class="fas fa-check" style="color: #2ecc71; margin-right: 0.75rem;"></i> In-country transport</li>
+                <li><i class="fas fa-check" style="color: #2ecc71; margin-right: 0.75rem;"></i> Food and accommodation</li>
+                <li><i class="fas fa-check" style="color: #2ecc71; margin-right: 0.75rem;"></i> Visas</li>
+                <li><i class="fas fa-check" style="color: #2ecc71; margin-right: 0.75rem;"></i> Travel insurance</li>
+                <li><i class="fas fa-check" style="color: #2ecc71; margin-right: 0.75rem;"></i> Comprehensive team training</li>
+            </ul>
+            <p style="font-size: 1.05rem; line-height: 1.8; color: #333; margin-top: 2rem;">
+                MVA provides experienced team leaders or can train your preferred leaders. Teams from schools, churches, youth groups, or community organisations are all welcome.
             </p>
         </div>
     </div>
-    <div class="nav-bar">
-        <div class="container nav-inner">
-            <a class="brand" href="index.html">
-                <img src="img/wordmark.png" alt="Missionary Ventures" width="1920" height="290">
-                <span class="brand-meta">
-                    <span class="brand-place">Australia</span>
-                    <span class="brand-tag">Involve, inspire, impact</span>
-                </span>
-            </a>
-            <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navMenu">
-                <span class="bars" aria-hidden="true"></span>
-                <span class="visually-hidden">Menu</span>
-            </button>
-            <nav class="nav-menu" id="navMenu" aria-label="Primary">
-                <a class="nav-link" href="index.html">Home</a>
-                <div class="nav-dropdown">
-                    <button class="nav-link nav-subtoggle" type="button" aria-expanded="false" aria-haspopup="true">About</button>
-                    <div class="dropdown-menu">
-                        <a href="about.html">About us</a>
-                        <a href="mission.html">Our mission</a>
-                        <a href="team.html">Our team</a>
-                    </div>
-                </div>
-                <div class="nav-dropdown">
-                    <button class="nav-link nav-subtoggle is-current" type="button" aria-expanded="false" aria-haspopup="true">Get involved</button>
-                    <div class="dropdown-menu">
-                        <a href="countries.html">Where we work</a>
-                        <a href="trips.html" aria-current="page">Team trips</a>
-                        <a href="donate.html">Donate</a>
-                    </div>
-                </div>
-                <a class="nav-link" href="news.html">News</a>
-                <a class="nav-link" href="contact.html">Contact</a>
-                <a class="nav-link nav-cta" href="donate.html">Donate</a>
-            </nav>
-        </div>
-    </div>
-</header>
-
-<main id="main">
-
-<header class="page-mast">
-    <div class="container">
-        <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a> <span aria-hidden="true">/</span> <span>Team trips</span></nav>
-        <h1>Team trips</h1>
-        <p class="deck">Churches, schools, youth groups, and individuals, travelling with national leaders.</p>
-    </div>
-</header>
-
-<section class="band band-white">
-    <div class="container split">
-        <div>
-            <h2>Where teams go</h2>
-            <p>MVA invites churches, schools, youth groups, and individuals to take part in trips across the Asia Pacific, with national leaders in the Philippines, East Malaysia, Indonesia, Cambodia, Thailand, Fiji, and Vanuatu.</p>
-            <dl class="spec">
-                <div><dt>Duration</dt><dd>10 to 14 days, and up to 3 months</dd></div>
-                <div><dt>Team size</dt><dd>5 to 12 people</dd></div>
-                <div><dt>Planning</dt><dd>Begin at least 6 months before</dd></div>
-                <div><dt>Who can join</dt><dd>Youth through to older adults</dd></div>
-            </dl>
-        </div>
-        <figure class="frame">
-            <img src="img/team-trips.jpg" alt="A group outdoors in Thailand in November 2024, holding a banner for the Christian Motorcyclists Association and Mission Ventures Thailand.">
-            <img src="img/mission-3.jpg" alt="Field photograph from a team visit." style="margin-top:0.75rem">
-        </figure>
-    </div>
 </section>
-<section class="band">
+
+<section class="cta-section" data-animate="fade-up">
     <div class="container">
-        <div class="split split-start">
-            <div>
-                <h2>Before you travel</h2>
-                <p>Preparation with the team covers:</p>
-                <ul class="topic-list">
-                    <li>Managing expectations</li>
-                    <li>Spiritual discernment</li>
-                    <li>Personal identity</li>
-                    <li>Team unity</li>
-                    <li>Conflict resolution</li>
-                    <li>Spiritual warfare</li>
-                    <li>Cross-cultural preparation</li>
-                </ul>
-            </div>
-            <div>
-                <h2>What the cost covers</h2>
-                <ul class="plain-list">
-                    <li>Airfares</li>
-                    <li>In-country transport</li>
-                    <li>Food and accommodation</li>
-                    <li>Visas</li>
-                    <li>Travel insurance</li>
-                    <li>Team preparation</li>
-                </ul>
-                <p>MVA provides experienced team leaders, or can train leaders you already trust. Teams from schools, churches, youth groups, or community organisations are welcome.</p>
+        <div class="cta-content">
+            <h2>Ask about a team trip</h2>
+            <p>Write if a church, school, youth group, or a few friends want to travel with national leaders.</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn btn-primary">Enquire About a Trip</a>
+                <a href="donate.html" class="btn btn-primary" style="background-color: transparent; border: 2px solid white;">Support a Team</a>
             </div>
         </div>
     </div>
 </section>
-<section class="band band-tight closing band-navy">
-    <div class="container closing-inner">
-        <div>
-            <h2>Ask about a team</h2>
-            <p>Write to the office if a church, a school, a youth group, or a few friends want to travel. Teams partner with local leaders.</p>
-        </div>
-        <div class="closing-actions"><a class="btn btn-primary" href="contact.html">Enquire</a><a class="btn btn-text" href="donate.html">Give towards a team</a></div>
-    </div>
-</section>
 
-
-</main>
-<footer class="site-footer">
-    <div class="container footer-grid">
-        <div>
-            <p class="footer-name">Missionary Ventures Australia</p>
-            <p>A family of Christians bound together by our love for God and for others, reaching the world with the love of Jesus Christ.</p>
-            <p class="footer-tag">Involve, inspire, impact</p>
-        </div>
-        <nav class="footer-col" aria-label="On this site">
-            <h2>On this site</h2>
-            <a href="about.html">About us</a>
-            <a href="mission.html">Our mission</a>
-            <a href="countries.html">Where we work</a>
-            <a href="trips.html">Team trips</a>
-            <a href="team.html">Our team</a>
-            <a href="news.html">News</a>
-        </nav>
-        <nav class="footer-col" aria-label="Get involved">
-            <h2>Get involved</h2>
-            <a href="trips.html">Join a mission trip</a>
-            <a href="donate.html">Give</a>
-            <a href="contact.html">Volunteer</a>
-            <a href="contact.html">Partner with us</a>
-            <a href="news.html">Read the stories</a>
-        </nav>
-        <div class="footer-col">
-            <h2>Office</h2>
-            <a href="tel:0492983607">0492 983 607</a>
-            <a href="mailto:office@mvaustralia.org">office@mvaustralia.org</a>
-            <p>PO Box 396<br>Ocean Grove<br>Victoria 3226, Australia</p>
-            <p>ACNC registered charity. Gifts over $2 are tax deductible.</p>
-        </div>
+<footer class="footer">
+    <div class="footer-wave">
+        <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+            <path d="M0,40 C150,80 350,0 500,40 C650,80 800,20 1000,50 C1200,80 1350,30 1440,50 L1440,100 L0,100 Z" fill="currentColor"/>
+        </svg>
     </div>
-    <div class="container footer-bottom">
-        <p>&copy; 2026 Missionary Ventures Australia.</p>
-        <p><a href="https://mvi.org" target="_blank" rel="noopener">Missionary Ventures International</a></p>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-about">
+                <div class="footer-logo"><span class="logo-highlight">missionary</span> ventures australia</div>
+                <p>A family of Christians bound together by our love for God and for others, reaching the world with the love of Jesus Christ.</p>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/missionaryventures.australia" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/missionaryventures/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/channel/UCHKHgtBLxyuWaBORw_h2sQQ" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="about.html">About Us</a>
+                <a href="mission.html">Our Mission</a>
+                <a href="countries.html">Where We Work</a>
+                <a href="trips.html">Team Trips</a>
+                <a href="team.html">Our Team</a>
+                <a href="donate.html">Donate</a>
+            </div>
+            <div class="footer-links">
+                <h4>Get Involved</h4>
+                <a href="trips.html">Join a Mission Trip</a>
+                <a href="donate.html">Financial Partnership</a>
+                <a href="contact.html">Volunteer</a>
+                <a href="contact.html">Partner With Us</a>
+                <a href="news.html">Read Our Stories</a>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Info</h4>
+                <p><i class="fas fa-phone"></i> 0492 983 607</p>
+                <p><i class="fas fa-envelope"></i> office@mvaustralia.org</p>
+                <p><i class="fas fa-map-marker-alt"></i> PO Box 396, Ocean Grove<br>Victoria 3226, Australia</p>
+                <div class="footer-charity"><p>ACNC Registered Charity</p></div>
+            </div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2025 Missionary Ventures Australia. All rights reserved.</p></div>
     </div>
 </footer>
-
-<button class="to-top" id="toTop" type="button" hidden>Top</button>
-<div class="questions" id="questions">
-    <button class="questions-toggle" id="questionsToggle" type="button" aria-expanded="false" aria-controls="questionsPanel">Questions</button>
-    <div class="questions-panel" id="questionsPanel" hidden>
-        <div class="questions-head">
-            <h2>Written answers</h2>
-            <button class="questions-close" id="questionsClose" type="button">Close</button>
-        </div>
-        <div class="questions-log" id="questionsLog" aria-live="polite">
-            <p class="questions-welcome">These are short written answers about Missionary Ventures Australia. For anything else, call <a href="tel:0492983607">0492 983 607</a> or email <a href="mailto:office@mvaustralia.org">office@mvaustralia.org</a>.</p>
-        </div>
-        <div class="questions-suggestions" id="questionsSuggestions">
-            <button type="button" data-ask="Tell me about MVA">About MVA</button>
-            <button type="button" data-ask="How can I join a mission trip?">Team trips</button>
-            <button type="button" data-ask="How can I donate?">Giving</button>
-            <button type="button" data-ask="Where does MVA work?">Countries</button>
-            <button type="button" data-ask="How do I contact the office?">Office</button>
-            <button type="button" data-ask="Tell me about Thailand flood relief">Thailand appeal</button>
-        </div>
-        <form class="questions-form" id="questionsForm">
-            <label class="visually-hidden" for="questionsInput">Your question</label>
-            <input id="questionsInput" type="text" placeholder="Trips, giving, or the office">
-            <button type="submit">Ask</button>
-        </form>
-    </div>
-</div>
-
-<script src="js/au-site.js" defer></script>
-<script src="js/theme.js" defer></script>
+<a href="#navbar" class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></a>
+<script src="script.js"></script>
 </body>
 </html>
