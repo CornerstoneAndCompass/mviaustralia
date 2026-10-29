@@ -1,6 +1,9 @@
 /* =========================================
    MVA - Missionary Ventures Australia
    Modern Website Stylesheet
+
+   Sister offices (for example Motivate New Zealand) can copy
+   this file and script.js unchanged, and supply their own pages.
    ========================================= */
 
 /* CSS Custom Properties */
@@ -126,9 +129,9 @@ a { text-decoration: none; color: inherit; transition: var(--transition); }
 }
 .nav-link {
     color: var(--gray-700);
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     font-weight: 500;
-    padding: 10px 16px;
+    padding: 10px 11px;
     border-radius: var(--radius-sm);
     transition: var(--transition);
     position: relative;
@@ -728,7 +731,7 @@ a { text-decoration: none; color: inherit; transition: var(--transition); }
 }
 .countries-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 .country-card {
@@ -1280,6 +1283,57 @@ a { text-decoration: none; color: inherit; transition: var(--transition); }
     width: 100%;
     height: 80px;
 }
+.global-family {
+    background: #0c0c16;
+    color: rgba(255,255,255,0.78);
+    font-size: 0.88rem;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.global-family-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px 28px;
+    flex-wrap: wrap;
+    padding: 14px 0;
+}
+.global-family p { margin: 0; }
+.global-family a { color: var(--white); }
+.global-family a:hover { color: var(--primary-light); }
+.global-family nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 18px;
+}
+.global-family [aria-current="page"] {
+    color: var(--primary-light);
+    font-weight: 600;
+}
+.story-next-wrap { padding-top: 0; padding-bottom: 80px; }
+.story-next {
+    margin-top: 0;
+    padding: 28px;
+    border-radius: var(--radius-lg);
+    background: linear-gradient(135deg, rgba(212,33,61,0.08), rgba(240,165,0,0.05));
+    border: 1px solid rgba(212,33,61,0.15);
+}
+.story-next h2 {
+    font-family: var(--font-display);
+    font-size: 1.8rem;
+    color: var(--dark);
+    margin-bottom: 8px;
+}
+.story-next .cta-buttons { justify-content: flex-start; }
+.btn-outline {
+    background: transparent;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    box-shadow: none;
+}
+.btn-outline:hover {
+    background: var(--primary);
+    color: var(--white);
+}
 .footer-grid {
     display: grid;
     grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
@@ -1799,6 +1853,41 @@ a { text-decoration: none; color: inherit; transition: var(--transition); }
     }
 }
 
+@media (max-width: 1240px) {
+    .nav-toggle { display: flex; }
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        max-width: 350px;
+        height: 100vh;
+        background: var(--white);
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 80px 30px 30px;
+        transition: var(--transition);
+        box-shadow: -10px 0 30px rgba(0,0,0,0.15);
+        overflow-y: auto;
+    }
+    .nav-menu.open { right: 0; }
+    .nav-link { padding: 14px 0; font-size: 1rem; }
+    .nav-dropdown { width: 100%; }
+    .dropdown-menu {
+        position: static;
+        transform: none;
+        opacity: 1;
+        visibility: visible;
+        box-shadow: none;
+        border: none;
+        padding: 0 0 0 16px;
+        background: transparent;
+        backdrop-filter: none;
+    }
+    .nav-dropdown:hover .dropdown-menu { transform: none; }
+    .global-family-inner { align-items: flex-start; flex-direction: column; }
+}
+
 @media (max-width: 768px) {
     .section { padding: 60px 0; }
     .nav-toggle { display: flex; }
@@ -1870,6 +1959,182 @@ a { text-decoration: none; color: inherit; transition: var(--transition); }
 @media (max-width: 480px) {
     .hero-line { font-size: 2rem; }
     .hero-stats { flex-direction: column; gap: 20px; }
-    .countries-grid { grid-template-columns: repeat(2, 1fr); }
     .form-row { grid-template-columns: 1fr; }
+}
+
+/* Hand-set indexes. These replace the white numbered cards.
+   Counts stay even at every breakpoint: 2x2, 3+3, or a single column. */
+.mark, .feature-mark {
+    font-family: var(--font-primary);
+    font-weight: 700;
+    font-size: 0.95rem;
+    letter-spacing: 0.04em;
+    color: var(--primary);
+    line-height: 1;
+    margin-right: 0.45rem;
+}
+.impact-band { background: #eaecf2; }
+.impact-board {
+    display: grid;
+    grid-template-columns: minmax(260px, 0.9fr) minmax(0, 1.15fr);
+    background: var(--white);
+    border-radius: 14px;
+    overflow: hidden;
+    align-items: stretch;
+}
+.impact-board figure {
+    margin: 0 -40px 0 0;
+    position: relative;
+    z-index: 1;
+    min-height: 460px;
+}
+.impact-board img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+}
+.impact-board figcaption {
+    position: absolute;
+    left: 16px;
+    bottom: 16px;
+    background: rgba(15, 15, 26, 0.82);
+    color: var(--white);
+    padding: 6px 10px;
+    font-family: var(--font-primary);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+.impact-board ol {
+    list-style: none;
+    margin: 0;
+    padding: 36px 32px 36px 72px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px 12px;
+    align-content: center;
+    border: none;
+}
+.impact-board li {
+    padding: 16px 18px 18px;
+    border: none;
+}
+.impact-board h3, .work-ledger h3, .belief-rows h3, .resource-ledger h3, .involve-side h3, .involve-feature h3, .feature-item h4 {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0;
+    font-family: var(--font-primary);
+    font-weight: 600;
+    font-size: 1.05rem;
+    line-height: 1.3;
+    margin-bottom: 8px;
+    color: var(--dark);
+}
+.impact-board p { color: var(--gray-700); font-size: 0.95rem; line-height: 1.6; margin: 0; }
+
+.involve-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+    gap: 28px;
+    align-items: stretch;
+}
+.involve-feature {
+    position: relative;
+    display: block;
+    min-height: 460px;
+    border-radius: 6px;
+    overflow: hidden;
+    color: var(--white);
+}
+.involve-feature img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.involve-feature div {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 28px;
+    background: linear-gradient(180deg, transparent, rgba(15, 15, 26, 0.88));
+}
+.involve-feature .mark { color: var(--primary-light); }
+.involve-feature h3 { color: var(--white); font-size: 1.45rem; margin-bottom: 8px; }
+.involve-feature p { color: rgba(255,255,255,0.88); margin: 0; }
+.involve-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top: 1px solid rgba(15, 15, 26, 0.18);
+}
+.involve-side a {
+    flex: 1;
+    display: block;
+    padding: 18px 4px;
+    border-bottom: 1px solid rgba(15, 15, 26, 0.18);
+    color: inherit;
+}
+.involve-side a:hover h3 { color: var(--primary); }
+.involve-side p { margin: 0; color: var(--gray-700); font-size: 0.95rem; }
+
+.resource-ledger, .work-ledger, .belief-rows {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.resource-ledger li, .belief-rows li {
+    display: block;
+    padding: 22px 0 20px;
+    border-top: 1px solid rgba(15, 15, 26, 0.16);
+}
+.resource-ledger li:last-child, .belief-rows li:last-child { border-bottom: 1px solid rgba(15, 15, 26, 0.16); }
+.resource-ledger p, .belief-rows p, .work-ledger p { margin: 0; color: var(--gray-700); }
+.resource-ledger .news-link { display: inline-block; margin-top: 10px; }
+
+.work-ledger {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 48px;
+}
+.work-ledger li {
+    display: block;
+    padding: 20px 0;
+    border-top: 1px solid rgba(15, 15, 26, 0.16);
+}
+.work-ledger li:nth-last-child(-n+2) { border-bottom: 1px solid rgba(15, 15, 26, 0.16); }
+
+.approach-row {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px;
+    margin-top: 8px;
+}
+.approach-row div {
+    padding-top: 14px;
+    border-top: 3px solid var(--primary);
+}
+.approach-row h3 { margin-bottom: 8px; color: var(--dark); font-size: 1.05rem; }
+.approach-row p { margin: 0; color: var(--gray-700); }
+
+.feature-item h4 { font-size: 1rem; font-weight: 600; }
+
+@media (max-width: 900px) {
+    .impact-board, .involve-layout, .work-ledger, .approach-row { grid-template-columns: 1fr; }
+    .impact-board figure { margin: 0; min-height: 280px; height: 320px; }
+    .impact-board ol { padding: 28px 22px 32px; }
+    .involve-feature { min-height: 320px; }
+    .work-ledger li:nth-last-child(-n+2) { border-bottom: none; }
+    .work-ledger li:last-child { border-bottom: 1px solid rgba(15, 15, 26, 0.16); }
+}
+@media (max-width: 700px) {
+    .countries-grid { grid-template-columns: 1fr; }
+    .impact-board ol { grid-template-columns: 1fr; }
 }
